@@ -2,6 +2,8 @@
 All Code from AI(GPT).   
 Hell yeah!
 
+https://github.com/user-attachments/assets/12c80db5-6296-40db-93bd-1c31b0849bbb
+
 # Manual Install
 ### if you don't trust my realese's vsix file, but code look like ok, then do manual install
 1. install nodejs with npm.
