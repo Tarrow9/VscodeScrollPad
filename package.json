@@ -1,0 +1,45 @@
+{
+  "name": "pen-scroll-panel",
+  "displayName": "Pen Scroll Panel",
+  "description": "A scroll-only panel for VS Code using pen drag.",
+  "version": "0.0.1",
+  "publisher": "sample",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onView:penScrollPanelView"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "penScrollContainer",
+          "title": "Pen Scroll",
+          "icon": "media/pen-scroll.svg"
+        }
+      ]
+    },
+    "views": {
+      "penScrollContainer": [
+        {
+          "id": "penScrollPanelView",
+          "name": "Scroll Pad",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
